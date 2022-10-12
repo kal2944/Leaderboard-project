@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 5% 0 3% 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background-color: #7ca8d3;
+  padding: 10px;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+.recent-scores {
+  width: 50%;
+}
+
+.recent-scores p,
+.insert-score p {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#refresh,
+#submit {
+  background-color: #3600b4;
+  margin: 0 0 5px 10px;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  color: rgb(235, 243, 245);
+  border-radius: 7px;
+}
+
+.scores-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #faf9f2;
+}
+
+thead {
+  background-color: #300396;
+  color: #fdfdfd;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+.insert-score {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  border: 2px solid #29256d;
+}
+
+#submit {
+  float: right;
+}
