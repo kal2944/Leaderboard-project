@@ -2,7 +2,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4fafa;
+  background-color: #588c7e;
 }
 
 .main {
@@ -12,27 +12,31 @@ body {
 h1 {
   font-size: 2.5em;
   margin: 0;
+  color: #f2e294d1;
+  border-color: #7a3b2e;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
+  color: #5d2b0056;
 }
 
 .flex-col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #7ca8d3;
+  background-color: #588c7e;
   margin: auto;
-  padding: 10px;
+  padding-top: 2cm;
 }
 
 .title {
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 2px 2px 4px hsl(0, 4%, 81%);
+  background-color: #e0876a;
 }
 
 .title-container {
-  width: 100%;
+  width: 70%;
 }
 
 .content {
@@ -41,6 +45,7 @@ h2 {
   justify-content: space-between;
   width: 80%;
   gap: 4em;
+  background-color: #f2e394;
 }
 
 .scoretitle-container {
@@ -53,6 +58,8 @@ h2 {
 
 .score-container {
   width: 50%;
+  align-items: flex-start;
+  padding-left: 5%;
 }
 
 input,
@@ -84,35 +91,64 @@ li {
 }
 
 button {
-  background-color: #3600b4;
-  padding: 5px 5px;
+  background-color: #7a3b2e;
+  padding: 8px 20px;
   border: 1px solid #fff;
   color: rgb(235, 243, 245);
-  border-radius: 7px;
+  border-radius: 18px;
+  font-size: medium;
 }
 
 .form-container {
   display: flex;
-  width: 50%;
+  width: 25%;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #7ca8d3;
+  background-color: #f2e394;
 }
 
 .player-name,
 .player-score {
   width: 82%;
+  border-radius: 8rem;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #8fb8de;
+  background-color: #dc0e4885;
 }
 
 .refresh-button:hover {
-  color: #fff;
+  color: rgb(27, 7, 7);
 }
 
 .submit-button:hover {
-  color: #fff;
+  color: rgb(248, 248, 248);
+}
+
+#submit_button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  .player-name,
+  .player-score, {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .content {
+    width: 70%;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
