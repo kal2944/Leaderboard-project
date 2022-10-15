@@ -1,85 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4fafa;
 }
 
-header {
-  text-align: center;
-  margin: 5% 0 3% 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  letter-spacing: 2px;
+.main {
+  padding: 2em;
 }
 
-.container {
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.flex-col {
   display: flex;
-  width: 80%;
-  margin: auto;
+  flex-direction: column;
+  align-items: center;
   background-color: #7ca8d3;
+  margin: auto;
   padding: 10px;
-  border-radius: 1px;
-  box-sizing: border-box;
 }
 
-.recent-scores {
+.title {
+  text-shadow: 2px 2px 4px #000;
+}
+
+.title-container {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  gap: 4em;
+}
+
+.scoretitle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.score-container {
   width: 50%;
 }
 
-.recent-scores p,
-.insert-score p {
-  display: inline-block;
-  font-weight: bolder;
-  font-size: 20px;
-  margin-bottom: 20px;
+input,
+button {
+  margin: 0.5em;
 }
 
-#refresh,
-#submit {
+input {
+  border: 2px solid #000;
+  padding: 0.5em 1em;
+}
+
+ul {
+  list-style: none;
+  border: 2px solid #000;
+  padding: 0;
+  margin: 0;
+}
+
+.scores-list :nth-child(even) {
+  background-color: #ddd;
+}
+
+li {
+  width: calc(100% - 0.4em);
+  padding: 0.2em;
+  margin: 0;
+  background-color: #fff;
+}
+
+button {
   background-color: #3600b4;
-  margin: 0 0 5px 10px;
-  padding: 5px 15px;
+  padding: 5px 5px;
   border: 1px solid #fff;
   color: rgb(235, 243, 245);
   border-radius: 7px;
 }
 
-.scores-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #faf9f2;
-}
-
-thead {
-  background-color: #300396;
-  color: #fdfdfd;
-}
-
-th,
-td {
-  padding: 5px;
-  text-align: left;
-}
-
-.insert-score {
-  width: 50%;
+.form-container {
   display: flex;
+  width: 50%;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  background-color: #7ca8d3;
 }
 
-form input {
-  display: block;
-  width: 300px;
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 7px;
-  border: 2px solid #29256d;
+.player-name,
+.player-score {
+  width: 82%;
 }
 
-#submit {
-  float: right;
+button:hover {
+  cursor: pointer;
+  background-color: #8fb8de;
+}
+
+.refresh-button:hover {
+  color: #fff;
+}
+
+.submit-button:hover {
+  color: #fff;
 }
